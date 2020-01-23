@@ -6,5 +6,9 @@ module.exports = {
   included() {
     this._super(...arguments);
     this.import('vendor/bootstrap.min.css');
+  },
+
+  isDevelopingAddon() {
+    return true;
   }
 };
